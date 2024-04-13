@@ -15,9 +15,24 @@
         <h1>Login</h1>
         <input type="text" placeholder="Login" id="login">
         <input type="text" placeholder="Senha" id="senha">
-        <input type="submit">    
+        <input type="submit" onclick="logar()"; return false>    
     </form>
     
+    <script type="text/javascript">
+ 
+        function logar(){
+
+    var login = document.getElementById('login').value;
+    var senha = document.getElementById('senha').value;
+
+    if(login == "sapato" && senha == "pao"){
+        alert('sucesso');
+        location.href = "hehe.html";
+    }else{
+        alert('Tem aglo errado ai mermão');
+    }
+}
+    </script>
 
 </body>
 </html>
